@@ -8,9 +8,10 @@ interface GameCardProps {
   image: string;
   rating: number;
   downloads: string;
+  onClick: string;
 }
 
-const GameCard = ({ title, description, image, rating, downloads }: GameCardProps) => {
+const GameCard = ({ title, description, image, rating, downloads, onClick }: GameCardProps) => {
   return (
     <div className="gaming-card p-6 group cursor-pointer">
       <div className="relative overflow-hidden rounded-lg mb-4">
@@ -39,7 +40,7 @@ const GameCard = ({ title, description, image, rating, downloads }: GameCardProp
         
         <div className="flex items-center justify-between pt-2">
           <span className="text-sm text-muted-foreground">{downloads} downloads</span>
-          <Button size="sm" className="gaming-button relative z-10">
+          <Button size="sm" className="gaming-button relative z-10" onClick={() => window.open(onClick, '_blank')}>
             <Download size={16} className="mr-2 relative z-10" />
             <span className="relative z-10">Play</span>
           </Button>

@@ -15,7 +15,11 @@ const Hero = () => {
         <div className="max-w-4xl mx-auto">
           <div className="flex justify-center mb-8">
             <div className="gaming-card p-4 glow-effect">
-              <Gamepad2 size={64} className="gaming-text-gradient" />
+              <img
+                src="https://play-lh.googleusercontent.com/INbkcHF2Om6CWWjVO_eGE2_CA6KepiuYSKPul99xtXfiFQjVosUA3VnRG6Z3ktKi4aM=s188-rw"
+                alt="App Icon"
+                className="w-20 h-20 rounded-xl shadow-lg mx-auto"
+              />
             </div>
           </div>
           
@@ -31,7 +35,15 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
-            <Button className="gaming-button px-8 py-6 text-lg relative z-10">
+            <Button
+              className="gaming-button px-8 py-6 text-lg relative z-10"
+              onClick={() => {
+                const el = document.getElementById("games");
+                if (el) {
+                  el.scrollIntoView({ behavior: "smooth" });
+                }
+              }}
+            >
               <span className="relative z-10">Explore Our Games</span>
             </Button>
             <Button variant="outline" className="px-8 py-6 text-lg border-primary/50 hover:bg-primary/10">

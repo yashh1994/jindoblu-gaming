@@ -12,7 +12,7 @@ const DownloadsSection = () => {
             <span className="gaming-text-gradient font-gaming">Get Started</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Download our games now and start your multiplayer adventure. 
+            Download our games now and start your multiplayer adventure.
             Available on all major platforms.
           </p>
         </div>
@@ -26,21 +26,26 @@ const DownloadsSection = () => {
             </div>
 
             <h3 className="text-2xl font-bold mb-6 text-white">Available on Mobile Platforms</h3>
-            
+
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
-              <Button className="gaming-button px-8 py-6 text-lg flex items-center relative z-10">
-                <img 
-                  src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
-                  alt="Google Play" 
+              <Button className="gaming-button px-8 py-6 text-lg flex items-center relative z-10"
+                onClick={() => window.open('https://play.google.com/store/apps/dev?id=8369547020914796683', '_blank')}
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                  alt="Google Play"
                   className="h-8 mr-3 relative z-10"
                 />
                 <span className="relative z-10">Google Play</span>
               </Button>
-              
-              <Button className="gaming-button px-8 py-6 text-lg flex items-center relative z-10">
-                <img 
-                  src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" 
-                  alt="App Store" 
+
+              <Button
+                className="gaming-button px-8 py-6 text-lg flex items-center relative z-10"
+                onClick={() => window.open('https://apps.apple.com/ca/developer/moreno-maio/id1190252979', '_blank')}
+              >
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                  alt="App Store"
                   className="h-8 mr-3 relative z-10"
                 />
                 <span className="relative z-10">App Store</span>
@@ -49,10 +54,10 @@ const DownloadsSection = () => {
 
             <div className="border-t border-border/50 pt-6">
               <p className="text-muted-foreground mb-4">Visit our official developer page</p>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 className="border-primary/50 hover:bg-primary/10"
-                onClick={() => window.open('https://play.google.com/store/apps/dev?id=6499943181840817817', '_blank')}
+                onClick={() => window.open('https://play.google.com/store/apps/dev?id=8369547020914796683', '_blank')}
               >
                 <ExternalLink size={20} className="mr-2" />
                 JindoBlu on Google Play
